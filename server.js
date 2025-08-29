@@ -6,7 +6,7 @@ app.use(bodyParser.json());
 
 const FULL_NAME = "pendyala_koushik";  
 const DOB = "13032005";        
-const EMAIL = "jkoushikpendyala1303@gmail.com";  
+const EMAIL = "koushikpendyala1303@gmail.com";  
 const ROLL_NUMBER = "22BCE0991"; 
 
 const isNumber = (str) => /^-?\d+$/.test(str);
