@@ -4,13 +4,11 @@ const bodyParser = require("body-parser");
 const app = express();
 app.use(bodyParser.json());
 
-// ====== CONFIG ======
-const FULL_NAME = "john_doe";  // replace with your full name (lowercase, underscore separated)
-const DOB = "17091999";        // replace with your dob in ddmmyyyy
-const EMAIL = "john@xyz.com";  // replace with your email
-const ROLL_NUMBER = "ABCD123"; // replace with your roll number
+const FULL_NAME = "pendyala_koushik";  
+const DOB = "13032005";        
+const EMAIL = "jkoushikpendyala1303@gmail.com";  
+const ROLL_NUMBER = "22BCE0991"; 
 
-// ====== HELPERS ======
 const isNumber = (str) => /^-?\d+$/.test(str);
 const isAlphabet = (str) => /^[a-zA-Z]+$/.test(str);
 
@@ -24,7 +22,6 @@ const alternatingCapsReverse = (alphas) => {
   return result;
 };
 
-// ====== ROUTE ======
 app.post("/bfhl", (req, res) => {
   try {
     const data = req.body.data;
@@ -80,7 +77,6 @@ app.post("/bfhl", (req, res) => {
   }
 });
 
-// ====== START SERVER ======
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`✅ Server running on port ${PORT}`);
