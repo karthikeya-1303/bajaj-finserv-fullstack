@@ -22,7 +22,7 @@ const alternatingCapsReverse = (alphas) => {
   return result;
 };
 
-app.post("/post", (req, res) => {
+app.post("/bfhl", (req, res) => {
   try {
     const data = req.body.data;
 
